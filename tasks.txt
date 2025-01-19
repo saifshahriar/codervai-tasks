@@ -1,6 +1,6 @@
 tasks.txt
 =========
 * task 1
-* task 2: feature-a
+* task 2: feature-a && feature-b
 * task 3
 * task 4
