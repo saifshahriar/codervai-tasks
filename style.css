@@ -1,0 +1,295 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1,
+h2 {
+  font-family: "Poppins", serif;
+  font-weight: 600;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.6;
+  color: #333;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.header {
+  font-family: "Poppins", serif;
+  font-weight: 600;
+  background: #f7fafd;
+  padding: 50px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: url("./assets/bg-hero-desktop.svg");
+}
+
+.header .logo {
+  width: 200px;
+}
+
+.btn {
+  font-family: "Open Sans", sans-serif;
+  font-size: 0, 7rem;
+  font-weight: 700;
+  padding: 20px 90px;
+  border-radius: 50px;
+  cursor: pointer;
+  border: none;
+}
+
+.btn-primary {
+  background: #fe52c0;
+  color: white;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+  /*box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);*/
+}
+
+.btn:hover {
+  background: #ff9bdb;
+  transform: translateY(-10px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.7);
+}
+
+.hero {
+  background: #f7fafd;
+  background: url("./assets/bg-hero-desktop.svg");
+  padding: 50px 0;
+  text-align: center;
+}
+
+.hero-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-text {
+  flex: 1;
+  margin: 20px;
+}
+
+.hero-text h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #002530;
+  text-align: left;
+}
+
+.hero-text p {
+  margin-bottom: 30px;
+  color: gray;
+  text-align: left;
+}
+
+.hero-image {
+  flex: 1;
+  max-width: 700px;
+}
+
+.features {
+  padding: 50px 0;
+  background: white;
+}
+
+.feature {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 50px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.feature:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.7);
+}
+
+.feature:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+.feature-image {
+  flex: 1;
+  max-width: 400px;
+  padding: 40px;
+}
+
+.feature-text {
+  flex: 2;
+  padding: 120px;
+}
+
+.feature-text h2 {
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+  color: #2d314d;
+}
+
+.feature-text p {
+  color: #6c757d;
+}
+
+.cta {
+  background: #fe52c0;
+  color: white;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.cta-container h2 {
+  margin-bottom: 20px;
+  font-size: 2rem;
+}
+
+.footer {
+  font-family: "Poppins", serif;
+  background: #00252e;
+  color: white;
+  padding: 120px 20px 40px 20px;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.footer-logo {
+  flex: 1;
+  max-width: 300px;
+}
+
+.footer-logo p {
+  margin-top: 20px;
+}
+
+.footer-contact li {
+  list-style: none;
+  margin: 10px 0;
+  display: flex;
+  align-items: center;
+}
+
+.footer-item {
+  color: white;
+  text-decoration: none;
+}
+
+.footer-item:hover {
+  text-decoration: underline;
+}
+
+.footer-contact img {
+  margin-right: 10px;
+}
+
+.footer-links {
+  margin: 100px;
+}
+
+.footer-links ul {
+  list-style: none;
+}
+
+.footer-links li {
+  margin: 10px 0;
+}
+
+.footer-links li:hover {
+  text-decoration: underline;
+}
+
+.footer-links a {
+  color: white;
+  text-decoration: none;
+}
+
+.footer-socials {
+  list-style-type: none;
+  padding: 100px;
+}
+
+.footer-socials li {
+  display: inline-block; /* Display items side by side */
+  margin-right: 10px; /* Optional: adds space between items */
+  font-size: 30px; /* Corrected property name */
+}
+
+.footer-socials li:hover {
+  cursor: pointer; /* Changes the cursor on hover */
+  color: #fe52c0; /* Changes the text color on hover */
+}
+
+.footer-bottom {
+  font-family: "Poppins", serif;
+  font-size: 12px;
+  text-align: center;
+  margin-top: 20px;
+  padding-top: 20px;
+  color: #aaa;
+}
+
+@media screen and (max-width: 375px) {
+  .container {
+    padding: 0 10px; /* Adjust padding for smaller screens */
+  }
+
+  .hero-image {
+    max-width: 373px;
+  }
+  .feature-image {
+    flex: 1;
+    max-width: 300px;
+    padding: 20px;
+  }
+  .feature-text {
+    padding: 20px;
+  }
+
+  .hero-image {
+    flex: 1;
+    max-width: 200px;
+  }
+
+  .element {
+    font-size: 14px; /* Reduce font sizes for mobile */
+    width: 100%; /* Make elements full width */
+  }
+  .footer {
+    padding: 50px 0px;
+  }
+  .footer-links ul {
+    padding: 0px 0px;
+  }
+  .fsdiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*height: 100vw;*/
+    padding: -100px;
+    box-sizing: border-box;
+  }
+  /* I tried so hard, but got so far, In the end, it doesnt even matter :( */
+}
