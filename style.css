@@ -30,7 +30,7 @@ body {
   font-family: "Poppins", serif;
   font-weight: 600;
   background: #f7fafd;
-  padding: 50px 30px;
+  padding: 50px 100px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -39,6 +39,35 @@ body {
 
 .header .logo {
   width: 200px;
+}
+
+.btn-nav {
+  font-family: "Open Sans", sans-serif;
+  font-size: 0, 7rem;
+  font-weight: 700;
+  height: 40px;
+  /*max-width: 100px;*/
+  color: #768692;
+  background-color: white;
+  box-shadow:
+    0 8px 16px 0 rgba(0, 0, 0, 0.2),
+    0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border: none;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
+  border-radius: 40px;
+  cursor: pointer;
+  transition:
+    background-color 0.3s,
+    transform 0.2s;
+  white-space: nowrap;
+}
+.btn-nav:hover {
+  background-color: #ff619e8c;
+  transform: scale(1.05);
+  color: #3b3e41;
 }
 
 .btn {
